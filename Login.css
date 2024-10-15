@@ -24,3 +24,29 @@ a{
     display: flex;
     flex-direction: column;
 }
+
+input {
+    width: 20%;
+}
+
+button {
+    width: 20%;
+}
+
+.menu-items {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.18);
+
+}
+
+
+.footer {
+    padding: 10px;
+}
+
+.footer p {
+    text-align: center;
+}
