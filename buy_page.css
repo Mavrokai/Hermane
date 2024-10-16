@@ -130,19 +130,20 @@ a {
 
     cursor: pointer;
 }
-
-
 #BSignin {
     padding: 2px 5px;
     position: absolute;
-    margin-left: 20rem;
-
     border: none;
     background-color: white;
-
     cursor: pointer;
+}
 
+#Blogin {
+    margin-left: 16rem;
+}
 
+#BSignin {
+    margin-left: 20rem;
 }
 
 body {
@@ -150,7 +151,6 @@ body {
     background-color: #ffffff;
     color: #333;
     margin: 0;
-    padding: 20px;
     text-align: center;
 }
 
@@ -221,74 +221,6 @@ h1 {
     font-size: 16px;
     transition: background-color 0.3s ease;
 }
-
 .product button:hover {
     background-color: #005bb5;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-size: 17px;
-}
-
-
-a {
-    text-decoration: none;
-    text-transform: none;
-    color: currentColor;
-}
-
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    position: fixed;
-    background-color: white;
-    top: 0%;
-    width: 100%;
-    padding-bottom: 10px;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-}
-
-.navbar ul li {
-    margin-left: 40px;
-    font-size: 17px;
-    
-}
-.navbar ul li:hover {
-
-        border-bottom:  solid 2px rgb(66, 62, 62);
-    
-}
-
-#Blogin {
-    padding: 2px 5px;
-    position: absolute;
-    margin-left: 16rem;
-
-    border: none;
-    background-color: white;
-
-    cursor: pointer;
-}
-
-
-#BSignin {
-    padding: 2px 5px;
-    position: absolute;
-    margin-left: 20rem;
-
-    border: none;
-    background-color: white;
-
-    cursor: pointer;
 }
