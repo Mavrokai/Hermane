@@ -120,6 +120,10 @@ a {
         border-bottom:  solid 2px rgb(66, 62, 62);
 }
 
+.Border-active.active {
+    border-bottom: solid 2px rgb(66, 62, 62);
+}
+
 #Blogin {
     padding: 2px 5px;
     position: absolute;

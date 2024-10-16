@@ -14,6 +14,7 @@ a {
     color: currentColor;
 }
 
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -34,6 +35,12 @@ a {
 .navbar ul li:hover {
         border-bottom:  solid 2px rgb(66, 62, 62);
 }
+
+
+.Border-active.active {
+    border-bottom: solid 2px rgb(66, 62, 62);
+}
+
 
 #Blogin {
     padding: 2px 5px;
