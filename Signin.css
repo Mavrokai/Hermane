@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;800;900&family=Outfit:wght@100;200;500;600;900&family=Poppins:wght@300;400;500&family=Raleway:wght@600;900&display=swap');
 
-
-
 * {
     box-sizing: border-box;
 }
 
-
+.Retour {
+    position: absolute;
+    padding: 0;
+    margin-top: -25px;
+    margin-left: -180px;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
-
     background-color: #cacaca;
-
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,8 +21,6 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-
-
 
 .container {
     background: white;
@@ -34,15 +33,11 @@ body {
     overflow: auto;
 }
 
-
-
 h1 {
     font-size: 26px;
     margin-bottom: 15px;
     color: #333;
 }
-
-
 
 p {
     font-size: 16px;
@@ -50,16 +45,12 @@ p {
     color: #666;
 }
 
-
-
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: 500;
     color: #333;
 }
-
-
 
 input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"] {
     width: 100%;
@@ -77,8 +68,6 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
     background-color: #ffffff;
 }
 
-
-
 button {
     width: 100%;
     padding: 12px;
@@ -94,5 +83,27 @@ button:hover {
     background-color: #00000034;
     color: #555;
     border: inset 1px black;
+}
 
+/* responsive 2.0*/
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }
