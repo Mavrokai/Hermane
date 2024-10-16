@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-size: 17px;
 }
 
 
@@ -16,7 +17,6 @@ a {
     text-transform: none;
     color: currentColor;
 }
-
 
 
 .navbar {
@@ -37,29 +37,13 @@ a {
 
 .navbar ul li {
     margin-left: 40px;
-    font-size: 15px;
+    font-size: 17px;
+    
 }
+.navbar ul li:hover {
 
-
-#BSignin {
-    padding: 2px 5px;
-    position: absolute;
-    margin-left: 20rem;
-
-    border-radius: 5px;
-    border: solid 1.5px;
-
-    box-shadow: 1px 1px 2px 1px grey;
-
-
-}
-
-#BSignin:hover {
-
-    color: white;
-    background-color: rgba(0, 0, 0, 0.76);
-    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
-
+        border-bottom:  solid 2px rgb(66, 62, 62);
+    
 }
 
 
@@ -68,17 +52,23 @@ a {
     position: absolute;
     margin-left: 16rem;
 
-    border-radius: 5px;
-    border: solid 1.5px;
+    border: none;
+    background-color: white;
 
-    box-shadow: 1px 1px 2px 1px grey;
+    cursor: pointer;
 }
 
-#Blogin:hover {
 
-    color: white;
-    background-color: rgba(0, 0, 0, 0.76);
-    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+#BSignin {
+    padding: 2px 5px;
+    position: absolute;
+    margin-left: 20rem;
+
+    border: none;
+    background-color: white;
+
+    cursor: pointer;
+
 
 }
 
