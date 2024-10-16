@@ -10,14 +10,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+
     background-color: #cacaca;
+
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-  
 }
 
 
@@ -93,4 +94,5 @@ button:hover {
     background-color: #00000034;
     color: #555;
     border: inset 1px black;
+
 }

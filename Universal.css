@@ -22,7 +22,6 @@ a {
     top: 0%;
     width: 100%;
     padding-bottom: 10px;
-    
 }
 
 .navbar ul {
@@ -31,13 +30,11 @@ a {
 }
 .navbar ul li {
     margin-left: 40px;
-    font-size: 17px;
-}
-.navbar ul li:hover {
-    border-bottom: solid 2px rgb(66, 62, 62);
+    font-size: 15px;
 }
 
-#Blogin, #BSignin {
+
+#BSignin {
     padding: 2px 5px;
     position: absolute;
     border: none;

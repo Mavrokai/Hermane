@@ -9,6 +9,7 @@
 body {
     font-family: 'SF Pro Display', sans-serif;
     background-color: #cacaca;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +50,7 @@ input[type="email"], input[type="password"] {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: solid 1px #818181;
+    border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
     background-color: #f9f9f9;
