@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;800;900&family=Outfit:wght@100;200;500;600;900&family=Poppins:wght@300;400;500&family=Raleway:wght@600;900&display=swap');
 
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -18,23 +15,44 @@ a{
 }
 
 
+input {
+    width: 50%;
+}
 
-.container {
+
+button {
+    
+    width: 20%;
+    border-radius: 5px;
+    
+}
+
+
+
+.formu {
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
+    
+
+    border: solid 3px rgb(37, 36, 36);
+    width: 30rem;
+    height: 35rem;
+    box-shadow: 1px 1px 10px 3px rgb(78, 76, 76);
+    
+}
+.container {
+    padding: 5rem 5rem 5rem 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-input {
-    width: 20%;
-}
-
-button {
-    width: 20%;
-}
 
 .menu-items {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -45,8 +63,8 @@ button {
 
 .footer {
     padding: 10px;
+    
 }
-
 .footer p {
     text-align: center;
 }
