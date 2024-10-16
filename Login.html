@@ -1,59 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./img/herman.png">
     <link rel="stylesheet" href="Login.css">
-    <title>Herman</title>
+    <title>Connexion</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="container">
+        <h1>Connexion</h1>
+        <p>Herman will always be there for you.</p>
+        <form action="#" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your@icloud.com" autocomplete="off" required>
 
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your Password" autocomplete="off" required>
 
-    <!-- CHANGE L ACTION POUR LE FORM  -->
-
-
-    <div class="formu">
-
-        <form action="CHANGER MOI !!!" method="post">
-
-            <div class="container">
-
-                <div id="InputTextU">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
-                </div>
-
-                <div id="InputTextP">
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                </div>
-            
-            
-
-                <button type="submit">Login</button>
-                <button type="Sign In">Sign In</button> <br>
-
-            </div>
-
-
-            <div class="Forgot">
-                <span class="psw"><a href="CHANGER MOI !!!">forgot password ?</a></span>
-            </div>
+            <button type="submit">Submit</button>
         </form>
-
+        
     </div>
-
-    <div class="menu-items">
-
-        <div class="footer">
-            <p> Copyright © 2024 Herman Inc. All rights reserved. Privacy Policy Terms of Use Sales Policy Legal
-                Site Map </p>
-        </div>
-    </div>
-    
 </body>
-
 </html>
