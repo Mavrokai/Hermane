@@ -6,15 +6,22 @@
     box-sizing: border-box;
 }
 
+.Retour {
+    position: absolute;
+    padding: 0;
+    margin-top: -20px;
+    margin-left: -25px;
+}
+
 body {
     font-family: 'SF Pro Display', sans-serif;
     background-color: #cacaca;
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: #2e2e2e;
+    padding: 0 20px;
 }
 
 .container {
@@ -55,6 +62,7 @@ input[type="email"], input[type="password"] {
     font-size: 16px;
     background-color: #f9f9f9;
 }
+
 input[type="email"]:focus, input[type="password"]:focus {
     outline: none;
     border-color: #000000;
@@ -76,4 +84,29 @@ button:hover {
     background-color: #00000034;
     color: #555;
     border: inset 1px black;
+}
+
+
+/* responsive HAHAHAHHAHA*/
+@media (max-width: 768px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input[type="email"], input[type="password"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }
