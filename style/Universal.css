@@ -14,6 +14,66 @@ a {
     color: currentColor;
 }
 
+button {
+    all: unset;
+}
+
+
+body {
+    overflow-x: hidden;
+    background-image: url(../img/Abstract\ Geometric\ Art\ Under\ Blue\ Sky.jpeg);
+    background-size: cover;
+}
+
+
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50rem; 
+    width: 100vw;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.title-main2 {
+    color: #000000;
+    font-size: 100px;
+
+}
+
+.title-main {
+    font-size: 100px;
+
+}
+
+.image-main {
+    position: absolute;
+    z-index: -1;
+    height: 100vh; 
+    width: 100vw;
+    opacity: 75%;
+}
+
+.section1, .desc-main {
+    color: gray;
+}
+
+.section2 {
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 .navbar {
     display: flex;
@@ -31,6 +91,7 @@ a {
 .navbar ul li {
     margin-left: 40px;
     font-size: 17px;
+
 }
 .navbar ul li:hover {
         border-bottom:  solid 2px rgb(66, 62, 62);
@@ -45,27 +106,20 @@ a {
 #Blogin {
     padding: 2px 5px;
     position: absolute;
-    margin-left: 16rem;
+    margin-left: 32rem;
 
     border: none;
-    background-color: white;
+    background-color: none;
 
     cursor: pointer;
 }
 #BSignin {
     padding: 2px 5px;
+    margin-left: 26rem;
     position: absolute;
     border: none;
-    background-color: white;
+    background-color: none;
     cursor: pointer;
-}
-
-#Blogin {
-    margin-left: 16rem;
-}
-
-#BSignin {
-    margin-left: 20rem;
 }
 
 .menu-list {
@@ -78,12 +132,70 @@ a {
 }
 
 .menu-items {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.18);
 }
+
+.slider {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    margin: auto;
+    margin-top: -20rem;
+  }
+  
+  .slide {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 1s;
+    padding: 0;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: unset;
+  }
+  
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 1px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 30px;
+  }
+  
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .btn-prev {
+    top: 43%;
+    left: 0%;
+  }
+  
+  .btn-next {
+    top: 43%;
+    right: 0%;
+  }
+  .slider {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
 
 .footer {
     padding: 10px;
