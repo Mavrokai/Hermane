@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const productList = document.getElementById('product-list');
 
-    fetch('http://51.81.42.10:3050/get_product', {
+    fetch('https://hermann-coaching.ddns.net:3050/get_product', {
           method: 'POST',
           headers: {
             'Accept': 'application/json',
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 productElement.innerHTML = `
                     <img src="${response[attributename].image}" alt="${response[attributename].product_label}">
                     <h2>${response[attributename].product_label}</h2>
-                    <p>${response[attributename].product_label}</p>
+                    <p>${response[attributename].product_description}</p>
                     <p class="price">${response[attributename].price} €</p>
                     <button data-product-id="${response[attributename].product_name}">Buy now !</button>
                 `;
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             document.querySelectorAll('.product button').forEach(button => {
                 button.addEventListener('click', () => {
-                    
+                    window.location.href = "../final_step.html"
                 });
             });    
         })

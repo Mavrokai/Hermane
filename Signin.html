@@ -1,56 +1,62 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./img/herman.png">
-    <link rel="stylesheet" href="./style/Signin.css">
-    <title>Herman - Create your account</title>
+    <link rel="stylesheet" href="./style/register_page.css">
+    <title>Herman - Créez votre compte</title>
 </head>
 <body>
     <div class="container">
+        <h1>Join Us</h1>
+        <p>Create your account to discover a world of opportunities !</p>
         
-        <img src="./img/arrow-left.svg" alt="retour" class="Retour"
-            onclick="history.back()">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your.email@example.com" required>
+        <div class="error-message" id="email-error"></div>
 
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="••••••••" required>
+        <div class="error-message" id="password-error"></div>
 
-        <h1>Joins us</h1>
-        <p>Join Herman for a new adventure </p>
-        
-        <form>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Your.email@example.com" autocomplete="off" required>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <div class="error-message" id="name-error"></div>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="••••••••" autocomplete="off" required>
+        <label for="firstname">Surname</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Your Surname" required>
+        <div class="error-message" id="firstname-error"></div>
 
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your Name" autocomplete="off" required>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78" required>
+        <div class="error-message" id="phone-error"></div>
 
-            <label for="firstname">Surname</label>
-            <input type="text" id="firstname" placeholder="Your Surname" autocomplete="off" required>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" placeholder="Your Address" required>
+        <div class="error-message" id="address-error"></div>
 
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="+33 6 12 34 56 78" autocomplete="off" required>
+        <label for="cp">Code postal</label>
+        <input type="text" id="cp" name="cp" placeholder="12345" required>
+        <div class="error-message" id="cp-error"></div>
 
-            <label for="address">Address</label>
-            <input type="text" id="address" placeholder="Your Address" autocomplete="off" required>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="Your City" required>
+        <div class="error-message" id="city-error"></div>
 
-            <label for="cp">Code postal</label>
-            <input type="text" id="cp" placeholder="12345" autocomplete="off" required>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+        <div class="error-message" id="dob-error"></div>
 
-            <label for="city">City</label>
-            <input type="text" id="city" placeholder="Your city" autocomplete="off" required>
+        <input type="hidden" id="key" name="key" value="HermannAPI-25TYI4927POIU">
 
-            <label for="dob">Date of birth</label>
-            <input type="date" id="dob" autocomplete="off" required>
-
-            <button type="submit">Create my account</button>
-        </form>
+        <button id="submit-button">Create my Account</button>
 
         <footer>
-            <p>Your information is protected and will never be shared. Check out our <a href="http://">privacy policy</a> for more details.</p>
+            <p>Your information is protected and will never be shared. Visit our <a href="http://">privacy policy</a> for more details .</p>
         </footer>
     </div>
+
+    <script src="./script/register_page.js"></script>
 </body>
 </html>

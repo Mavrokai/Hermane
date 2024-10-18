@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;800;900&family=Outfit:wght@100;200;500;600;900&family=Poppins:wght@300;400;500&family=Raleway:wght@600;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.Retour {
+    position: absolute;
+    padding: 0;
+    margin-top: -25px;
+    margin-left: -180px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #cacaca;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: solid 1px #818181;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #000000;
+    background-color: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00000034;
+    color: #555;
+    border: inset 1px black;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
